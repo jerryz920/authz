@@ -12,7 +12,7 @@ fmt:
 	gofmt -w $(SRCS)
 
 vet:
-	@-go get -v golang.org/x/tools/cmd/vet
+	#@-go get -v golang.org/x/tools/cmd/vet
 	$(foreach pkg,$(PKGS),go vet $(pkg);)
 
 lint:

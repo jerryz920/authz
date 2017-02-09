@@ -1,43 +1,69 @@
 {
-	"ImportPath": "authz",
-	"GoVersion": "go1.5.1",
+	"ImportPath": "github.com/twistlock/authz",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
+		{
+			"ImportPath": "github.com/Microsoft/go-winio",
+			"Comment": "v0.3.8",
+			"Rev": "fff283ad5116362ca252298cfc9b95828956d85d"
+		},
 		{
 			"ImportPath": "github.com/Sirupsen/logrus",
 			"Comment": "v0.8.7-53-g446d1c1",
 			"Rev": "446d1c146faa8ed3f4218f056fcd165f6bcfda81"
 		},
 		{
+			"ImportPath": "github.com/Sirupsen/logrus/hooks/syslog",
+			"Comment": "v0.8.7-53-g446d1c1",
+			"Rev": "446d1c146faa8ed3f4218f056fcd165f6bcfda81"
+		},
+		{
 			"ImportPath": "github.com/codegangsta/cli",
-			"Comment": "1.2.0-139-g142e6cd",
+			"Comment": "v1.8.0-4-g142e6cd",
 			"Rev": "142e6cd241a4dfbf7f07a018f1f8225180018da4"
 		},
 		{
 			"ImportPath": "github.com/docker/docker/pkg/authorization",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/ioutils",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/longpath",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/plugingetter",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
 		},
 		{
 			"ImportPath": "github.com/docker/docker/pkg/plugins",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
 		},
 		{
-			"ImportPath": "github.com/docker/docker/vendor/src/github.com/Sirupsen/logrus",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"ImportPath": "github.com/docker/docker/pkg/plugins/transport",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-4475-gf2d9f91",
+			"Rev": "f2d9f91c50a24cc75db27027c76d04e8b7a2d362"
 		},
 		{
 			"ImportPath": "github.com/docker/go-connections/sockets",
-			"Comment": "v0.1.1-2-g4e42727",
+			"Comment": "v0.1.2",
 			"Rev": "4e42727957c146776e5de9cec8c39e4059ed9f20"
 		},
 		{
 			"ImportPath": "github.com/docker/go-connections/tlsconfig",
-			"Comment": "v0.1.1-2-g4e42727",
+			"Comment": "v0.1.2",
 			"Rev": "4e42727957c146776e5de9cec8c39e4059ed9f20"
 		},
 		{
@@ -61,6 +87,22 @@
 		{
 			"ImportPath": "github.com/stretchr/testify/assert",
 			"Rev": "dab07ac62d4905d3e48d17dc549c684ac3b7c15a"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "60c41d1de8da134c05b7b40154a9a82bf5b7edb9"
+		},
+		{
+			"ImportPath": "golang.org/x/net/proxy",
+			"Rev": "60c41d1de8da134c05b7b40154a9a82bf5b7edb9"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "d75a52659825e75fff6158388dddc6a5b04f9ba5"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "d75a52659825e75fff6158388dddc6a5b04f9ba5"
 		}
 	]
 }
